@@ -9,7 +9,7 @@ services:
       container_name: shop-validator
       build: ./shop-validator
       ports:
-        - "8081:8081"
+        - "8082:8082"
 
   kafka:
     container_name: kafka
