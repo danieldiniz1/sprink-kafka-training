@@ -1,5 +1,15 @@
 services:
-  
+  shop-api:
+    container_name: shop-api
+    build: ./shop-api
+    ports:
+      - "8080:8080"
+    
+  shop-validator:
+      container_name: shop-validator
+      build: ./shop-validator
+      ports:
+        - "8081:8081"
 
   kafka:
     container_name: kafka
